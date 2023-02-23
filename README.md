@@ -17,7 +17,6 @@ The out put is correct because
 0xFFFFFFFF + 0x1 = 0x100000000 but the variable uint32_t only holds 32 bits so it prints out 0x0 and has an overflow of 1
 0x1234 + 0x8765 = 0x9999
 0x72DF9901 + 0x2E0B484A = 0xA0EAE14B
-
 ```
 
 Overflow:
