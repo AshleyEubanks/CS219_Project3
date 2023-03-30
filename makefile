@@ -1,8 +1,11 @@
-Proj1: driver.o 
-	g++ -o Proj1 driver.o
+Proj2: driver.o operations.o
+	g++ -o Proj2 driver.o operations.o
 
-driver.o: driver.cpp
+driver.o: driver.cpp operations.h
 	g++ -c driver.cpp
 
+operations.o: operations.h operations.cpp
+	g++ -c operations.cpp
+
 clean: 
-	rm *.o Proj1
+	rm *.o Proj2
