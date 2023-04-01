@@ -1,3 +1,10 @@
+/* Name:        Ashley Eubanks
+ * Date:        2/20/23
+ * Class:       CS 219
+ * Assignment:  Project 2
+ * Purpose:     Header file for the operations class. 
+ */
+
 #ifndef OPERATIONS_H
 #define OPERATIONS_H
 

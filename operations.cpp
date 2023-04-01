@@ -1,3 +1,11 @@
+/* Name:        Ashley Eubanks
+ * Date:        3/31/23
+ * Class:       CS 219
+ * Assignment:  Project 2
+ * Purpose:     Source file for the Operations class, which takes in the operator and the operands from each line of the input file.
+ *              Saves and updates the answer to the operation. Displays the operator, operands, and answer as well. 
+*/
+
 #include "operations.h"
 
 Operations::Operations(){
@@ -55,19 +63,3 @@ void Operations::display(){
     cout << hex2 << ":" << setw(width);
     cout << hexAnswer << endl;
 }
-
-// void display(string operation, uint32_t num1, uint32_t num2, uint32_t answer){
-//     int width = 20;
-//     char hex1[32];
-//     char hex2[32];
-//     char hexAnswer[32];
-
-//     sprintf(hex1, "0x%X", num1);
-//     sprintf(hex2, "0x%X", num2);
-//     sprintf(hexAnswer, "0x%X", answer);
-
-//     cout << operation << setw(width);
-//     cout << hex1 << setw(width);
-//     cout << hex2 << ":" << setw(width);
-//     cout << hexAnswer << endl;
-// }
