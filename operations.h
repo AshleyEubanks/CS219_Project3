@@ -1,7 +1,7 @@
 /* Name:        Ashley Eubanks
- * Date:        2/20/23
+ * Date:        4/24/23
  * Class:       CS 219
- * Assignment:  Project 2
+ * Assignment:  Project 3
  * Purpose:     Header file for the operations class. 
  */
 
@@ -17,32 +17,40 @@ using namespace std;
 class Operations{
     string operation;
     uint32_t num1, num2, answer;
-    int rd;
-    uint32_t regesters[8];
+    string rd, strNum1, strNum2;
+    uint32_t r0;
+    uint32_t r1;
+    uint32_t r2;
+    uint32_t r3;
+    uint32_t r4;
+    uint32_t r5;
+    uint32_t r6;
+    uint32_t r7;
 
     public:
         Operations();
-        Operations(string, uint32_t, uint32_t);
+        Operations(string, string, string);
 
-        uint32_t getRegester(int);
-        void setRegester(int, uint32_t);
+        uint32_t getRegester(string);
+        void setRegester(string, uint32_t);
 
-        int getRd();
-        void setRd(int);
+        string getRd();
+        void setRd(string);
 
         uint32_t getNum1();
-        void setNum1(uint32_t);
+        void setNum1(string);
 
         uint32_t getNum2();
-        void setNum2(uint32_t);
+        void setNum2(string);
 
         string getOperation();
         void setOperation(string);
 
         uint32_t getAnswer();
-        void setAnswer(int, uint32_t);
+        void setAnswer(string, uint32_t);
 
         void display();
+        void displayReg();
 
 };
 #endif 
